@@ -1,0 +1,10 @@
+POST http://localhost:8080//add-hero
+Content-Type: application/json
+
+{
+  "name": "Szymon",
+  "power": 10
+}
+
+###
+GET http://localhost:8080//add-hero

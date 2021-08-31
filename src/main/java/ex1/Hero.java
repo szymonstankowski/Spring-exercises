@@ -1,10 +1,13 @@
 package ex1;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class Hero implements Comparable, Serializable {
 
     private String name;

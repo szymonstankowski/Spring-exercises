@@ -1,9 +1,7 @@
 package ex1;
 
-import jdk.internal.icu.text.UnicodeSet;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -19,9 +17,10 @@ public class HeroComponent {
 
     private List<Hero> heroes = new ArrayList<>();
 
-    public void addHero(Hero hero) {
-        heroes.add(hero);
-    }
+   public Hero addHero(Hero heroToAdd){
+       heroes.add(heroToAdd);
+       return heroToAdd;
+   }
 
     public List<Hero> getHeroes() {
         return heroes;
@@ -31,9 +30,5 @@ public class HeroComponent {
         return heroes.stream().filter(hero -> hero.getPhoneNumber().equals(phoneNumber)).findFirst();
 
     }
-
-
-
-
 
 }
