@@ -1,6 +1,8 @@
 package ex1;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +14,8 @@ import java.util.Optional;
 //            Utwórz metodę o sygnaturze:
 
 
-@Component
+@Primary
+@Service
 public class HeroComponent {
 
     private List<Hero> heroes = new ArrayList<>();
