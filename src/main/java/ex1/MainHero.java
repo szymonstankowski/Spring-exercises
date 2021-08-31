@@ -24,11 +24,11 @@ public class MainHero {
         List<Hero> heroList = new ArrayList<>();
 
 
-        heroList.add(new Hero("Superman", 100L, LocalDate.of(2021,8,31), "123456"));
-        heroList.add(new Hero("Ironman", 85L, LocalDate.of(2021,8,31), "0987"));
-        heroList.add(new Hero("Hulk", 90L, LocalDate.of(2021,8,31), "1234567"));
-        heroList.add(new Hero("spiderman", 6L, LocalDate.of(2001, 12,11), "1234567890"));
-        heroList.add(new Hero("hubertman", 10l, LocalDate.of(2001, 12,11),"0987654321"));
+        heroList.add(new Hero("Superman", 100L, LocalDate.of(2021,8,31)));
+        heroList.add(new Hero("Ironman", 85L, LocalDate.of(2021,8,31)));
+        heroList.add(new Hero("Hulk", 90L, LocalDate.of(2021,8,31)));
+        heroList.add(new Hero("spiderman", 6L, LocalDate.of(2001, 12,11)));
+        heroList.add(new Hero("hubertman", 10l, LocalDate.of(2001, 12,11)));
 
 
 

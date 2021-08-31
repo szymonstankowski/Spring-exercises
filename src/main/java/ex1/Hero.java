@@ -12,12 +12,13 @@ public class Hero implements Comparable, Serializable {
     private LocalDate dateOfbirth;
     private String phoneNumber;
 
-    public Hero(String name, Long power, LocalDate dateOfBirth, String phoneNumber) {
+    public Hero(String name, Long power, LocalDate dateOfBirth) {
         this.name = name;
         this.power = power;
         this.dateOfbirth = dateOfBirth;
-        this.phoneNumber = phoneNumber;
+        //this.phoneNumber = phoneNumber;
     }
+
 
     @Override
     public int compareTo(Object o) {
