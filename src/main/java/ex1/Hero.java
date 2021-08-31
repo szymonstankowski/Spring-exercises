@@ -7,10 +7,10 @@ import java.util.stream.Collectors;
 
 public class Hero implements Comparable, Serializable {
 
-    String name;
-    Long power;
-    LocalDate dateOfbirth;
-    String phoneNumber;
+    private String name;
+    private Long power;
+    private LocalDate dateOfbirth;
+    private String phoneNumber;
 
     public Hero(String name, Long power, LocalDate dateOfBirth, String phoneNumber) {
         this.name = name;
